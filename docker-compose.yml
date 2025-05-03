@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  go-app:
+    build: .
+    container_name: go-app
+    # no ports needed because this is not a web service
+    restart: "no"         # run once and stop
